@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .neo-shadow {
+    box-shadow: 8px 8px 0px 0px #1a1a1a;
+  }
+
+  .neo-shadow-sm {
+    box-shadow: 4px 4px 0px 0px #1a1a1a;
+  }
+
+  .neo-shadow-active {
+    box-shadow: 2px 2px 0px 0px #1a1a1a;
+  }
+
+  .neo-brutal-shadow {
+    box-shadow: 8px 8px 0px 0px #1a1a1a;
+  }
+
+  .neo-brutal-shadow-sm {
+    box-shadow: 4px 4px 0px 0px #1a1a1a;
+  }
+
+  .bauhaus-grid {
+    background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .fixed.bauhaus-grid {
+    opacity: 0.05;
+  }
+}
+
+@layer base {
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARENA.BAU - Register</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+<link href="public/output.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen">
+<!-- TopNavBar (Shared Component Execution) -->
+<header class="w-full border-b-4 border-primary bg-background shadow-[6px_6px_0px_0px_#1a1a1a] sticky top-0 z-50">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-full">
+<div class="flex items-center gap-8">
+<a href="#" class="text-4xl font-headline font-black tracking-tighter text-primary border-r-4 border-primary px-4">ARENA.BAU</a>
+<div class="hidden md:flex gap-4">
+<a href="#" class="font-headline font-black uppercase text-primary hover:bg-surface-container-highest transition-colors px-3 py-1">Tournaments</a>
+<a href="#" class="font-headline font-black uppercase text-primary bg-primary-fixed border-2 border-primary px-3 py-1">Register</a>
+<a href="#" class="font-headline font-black uppercase text-primary hover:bg-surface-container-highest transition-colors px-3 py-1">Leaderboards</a>
+<a href="#" class="font-headline font-black uppercase text-primary hover:bg-surface-container-highest transition-colors px-3 py-1">Teams</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary p-2 hover:bg-primary-fixed transition-colors" data-original-icon="notifications">notifications</button>
+<button class="material-symbols-outlined text-primary p-2 hover:bg-primary-fixed transition-colors" data-original-icon="account_circle">account_circle</button>
+<button class="hidden md:block bg-primary text-on-primary font-headline font-black px-6 py-2 border-2 border-primary neo-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">SIGN UP</button>
+</div>
+</nav>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Side: Visual/Context (Bento Layout Item) -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="border-4 border-primary bg-tertiary p-8 neo-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4">
+<span class="material-symbols-outlined text-7xl opacity-20 text-on-tertiary group-hover:rotate-12 transition-transform duration-500">emoji_events</span>
+</div>
+<h1 class="font-headline font-black text-6xl md:text-8xl leading-none text-on-tertiary mb-6 tracking-tighter">
+                    JOIN THE<br>GRID.
+                </h1>
+<p class="font-body font-bold text-on-tertiary uppercase text-xl max-w-sm mb-8">
+                    FORM FOLLOWS FUNCTION. VICTORY FOLLOWS THE FORM.
+                </p>
+<div class="w-full h-1 bg-on-tertiary mb-8"></div>
+<div class="flex flex-wrap gap-2">
+<span class="border-2 border-on-tertiary px-4 py-1 font-headline font-black uppercase text-on-tertiary">Season 04</span>
+<span class="border-2 border-on-tertiary px-4 py-1 font-headline font-black uppercase text-on-tertiary">Tier: Pro</span>
+<span class="border-2 border-on-tertiary px-4 py-1 font-headline font-black uppercase text-on-tertiary">Global</span>
+</div>
+</div>
+<!-- Descriptive Card -->
+<div class="border-4 border-primary bg-primary-fixed p-6 neo-shadow-sm">
+<h3 class="font-headline font-black text-2xl uppercase mb-2">Registration Status: OPEN</h3>
+<p class="font-body text-sm text-on-primary-fixed font-medium">Complete your player profile to unlock tournament access. Once registered, your stats will be tracked across the Bauhaus Neo-Brutalist ecosystem.</p>
+</div>
+</div>
+<!-- Right Side: Registration Form -->
+<div class="lg:col-span-7">
+<div class="border-4 border-primary bg-white p-8 md:p-12 neo-shadow">
+<form class="space-y-10" id="registrationForm">
+<div class="space-y-2">
+<label for="name" class="font-headline font-black text-xl uppercase tracking-tight flex items-center gap-2">
+<span class="w-4 h-4 bg-secondary"></span>
+                            Player Name
+                        </label>
+<input type="text" id="name" name="name" required="" placeholder="ENTRY_USERNAME" class="w-full border-b-4 border-primary bg-transparent py-4 text-2xl font-headline font-black uppercase focus:outline-none focus:border-secondary transition-colors placeholder:opacity-30">
+</div>
+<div class="space-y-2">
+<label for="email" class="font-headline font-black text-xl uppercase tracking-tight flex items-center gap-2">
+<span class="w-4 h-4 bg-tertiary"></span>
+                            Communication Hub (Email)
+                        </label>
+<input type="email" id="email" name="email" required="" placeholder="PLAYER@DOMAIN.COM" class="w-full border-b-4 border-primary bg-transparent py-4 text-2xl font-headline font-black uppercase focus:outline-none focus:border-tertiary transition-colors placeholder:opacity-30">
+</div>
+<div class="space-y-2">
+<label for="country" class="font-headline font-black text-xl uppercase tracking-tight flex items-center gap-2">
+<span class="w-4 h-4 bg-primary-fixed"></span>
+                            Origin Territory (Country)
+                        </label>
+<div class="relative">
+<select id="country" name="country" required="" class="w-full border-b-4 border-primary bg-transparent py-4 text-2xl font-headline font-black uppercase focus:outline-none focus:border-primary appearance-none cursor-pointer">
+<option value="" disabled="" selected="">SELECT_REGION</option>
+<option value="US">United States</option>
+<option value="DE">Germany</option>
+<option value="JP">Japan</option>
+<option value="UK">United Kingdom</option>
+<option value="BR">Brazil</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-4xl">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-6 pt-8">
+<button type="submit" class="flex-1 bg-secondary text-white font-headline font-black text-2xl py-6 border-4 border-primary neo-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none active:translate-x-2 active:translate-y-2 transition-all uppercase tracking-tighter">
+                            Create Player
+                        </button>
+<button type="button" class="flex-1 bg-primary-fixed text-primary font-headline font-black text-2xl py-6 border-4 border-primary neo-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tighter">
+                            Join Tournament
+                        </button>
+</div>
+<p class="font-body text-xs font-bold uppercase text-center opacity-60">
+                        By registering, you agree to the Bauhaus Protocols and Code of Competitive Conduct.
+                    </p>
+</form>
+</div>
+<!-- Supplementary Images (Asymmetric Layout) -->
+<div class="mt-12 grid grid-cols-2 gap-6">
+<div class="border-4 border-primary h-64 neo-shadow relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A minimalist architectural shot of a Bauhaus-style building with clean lines, sharp shadows, and a monochromatic palette. The lighting is high-contrast, midday sun, emphasizing the geometric forms. Touches of primary yellow and red accents are visible in the window frames and signage, creating a bold, modern, light-mode aesthetic for a gaming arena." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGqam7-Eoi3YrB6-KakS2dHkSrlhIFbivrbHVO99rpodrzQOsEiJpe9DhxNJHc0XIKmE9EHlMTOMfMO6VWOLh8jW4A8Wj3jE88NA4O-E8LOtb1aFSkSHTPOJ0uDpDL4109ReoglqozJc4PsiNwCFn7fi9GUVyxRtM6H7_gZu4218__nu0eofZGOTlhocOEN6ts2sw1jPWeJYniIstZiNAH4zcO2Dgo2wnmorm4cChKu9gbi2sGMsQT">
+<div class="absolute bottom-0 left-0 bg-primary text-white font-headline font-black px-4 py-2 uppercase text-xs">
+                        Sector_Alpha
+                    </div>
+</div>
+<div class="border-4 border-primary h-64 neo-shadow-sm mt-8 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a professional gaming setup in a neo-brutalist environment. The equipment is sleek and black, set against a warm off-white concrete desk. Bold geometric red and yellow graphics are projected onto the wall behind. The lighting is focused and cinematic, highlighting the mechanical textures and the industrial design of the hardware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWNC--8cZVXgb0wFsYVZl4jbvKt2ePLu1mKQbzj-vyjPhO3g704DlEdIOHRtCuVaLWa4ohT0DrSpF2N_njiHWOIIydWPoSF_YY_eHsb88kQobW6mNUHzqvx8WTwe7WChx8fWvFZsIF4NToExEukHanJ2XQfNLTww4AqGGEdNQ0XANArHuJyJQAAxQ7AaV9nL81uBVd9_2Jxc_RNFbYQZl9ItM5g9g5zqT3uz2qMoj5XGtlDAmV_jMe">
+<div class="absolute bottom-0 right-0 bg-secondary text-white font-headline font-black px-4 py-2 uppercase text-xs">
+                        Sector_Beta
+                    </div>
+</div>
+</div>
+</div>
+</main>
+<!-- SideNavBar Simulation (Shared Component Execution - Hidden by default on landing registration) -->
+<div class="fixed top-0 left-0 h-screen w-64 border-r-4 border-primary bg-surface-bright -translate-x-full transition-transform duration-300 z-[100] flex flex-col py-8 px-4 gap-4" id="sideNav">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-12 h-12 bg-primary border-2 border-primary neo-shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A graphic vector avatar of a futuristic player wearing high-tech visors, styled in a minimalist Bauhaus fashion using only black, white, and a single accent color of yellow. The background is a flat off-white. The aesthetic is sharp, clean, and highly geometric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtcx6q44HDA5r-Xo4JIENjU-uE59OF-KgRNCMIZq_PRfPbvZ19DjfaJBDEoA-QQjgq6ngCCrkBxwJmoF8sQjy8P7RuF1SHUhwpvQ0OcFkINDCjlvVUIQc3imH7vJyKYCbsHdBBnVhfnD-k3mvlWcpVcUuQ2N609Tc1pRG1aj0owYH8YLpS8lBU48uVb5w1KIALPNJiJqLRAWgbPOSycmVUr3_gffPf7aQZh6hGMDMbkrqDL7vvv4Hv">
+</div>
+<div>
+<h4 class="font-headline font-black text-sm uppercase">PLAYER_ONE</h4>
+<p class="font-body text-xs font-bold text-on-surface-variant uppercase">Rank: Grandmaster</p>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-2">
+<button class="flex items-center gap-3 font-headline font-black uppercase p-3 text-primary bg-tertiary text-on-tertiary border-2 border-primary translate-x-1 transition-transform">
+<span class="material-symbols-outlined">grid_view</span> Home
+            </button>
+<button class="flex items-center gap-3 font-headline font-black uppercase p-3 text-primary hover:bg-secondary-container hover:translate-x-1 transition-all">
+<span class="material-symbols-outlined">emoji_events</span> Competitions
+            </button>
+<button class="flex items-center gap-3 font-headline font-black uppercase p-3 text-primary hover:bg-secondary-container hover:translate-x-1 transition-all">
+<span class="material-symbols-outlined">leaderboard</span> My Stats
+            </button>
+<button class="flex items-center gap-3 font-headline font-black uppercase p-3 text-primary hover:bg-secondary-container hover:translate-x-1 transition-all">
+<span class="material-symbols-outlined">help</span> Support
+            </button>
+</nav>
+<button class="mt-auto bg-primary text-on-primary font-headline font-black py-4 border-2 border-primary neo-shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase">
+            START TOURNAMENT
+        </button>
+</div>
+<!-- Toggle for SideNav (Mobile Only) -->
+<button class="md:hidden fixed bottom-6 right-6 bg-primary text-white w-16 h-16 rounded-none border-4 border-primary neo-shadow z-[110] flex items-center justify-center" id="navToggle">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+<footer class="mt-20 border-t-4 border-primary bg-primary text-on-primary py-12 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-3xl font-headline font-black tracking-tighter uppercase">
+                ARENA.BAU
+            </div>
+<div class="flex gap-8 font-headline font-black uppercase text-sm">
+<a class="hover:text-primary-fixed transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Discord</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Archives</a>
+</div>
+<div class="font-body text-xs font-bold uppercase opacity-60">
+                © 1919-2024 Bauhaus Competitive League
+            </div>
+</div>
+</footer>
+<script src="js/registration.js"></script>
+</body>
+</html>
