@@ -1,185 +1,299 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARENA.BAU - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
-  <link href="public/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARENA.BAU - Home</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;900&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
+        rel="stylesheet">
+    <link href="public/output.css" rel="stylesheet">
 </head>
+
 <body class="bg-background text-primary font-body antialiased min-h-screen" data-page="index">
-<!-- TopNavBar -->
-<nav class="sticky top-0 z-50 bg-background border-b-4 border-primary flex justify-between items-center w-full px-6 py-4 max-w-full shadow-[6px_6px_0px_0px_#1a1a1a]">
-<div class="flex items-center gap-8">
-<div class="text-4xl font-headline font-black tracking-tighter text-primary border-r-4 border-primary px-4">
+    <!-- TopNavBar -->
+    <nav
+        class="sticky top-0 z-50 bg-background border-b-4 border-primary flex justify-between items-center w-full px-6 py-4 max-w-full shadow-[6px_6px_0px_0px_#1a1a1a]">
+        <div class="flex items-center gap-8">
+            <div class="text-4xl font-headline font-black tracking-tighter text-primary border-r-4 border-primary px-4">
                 ARENA.BAU
             </div>
-<div class="hidden md:flex gap-4">
-<a href="/frontend/tournament.html" class="text-primary bg-primary-fixed border-2 border-primary px-3 py-1 font-headline font-black uppercase tracking-tighter active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-75">Tournaments</a>
-<a href="/frontend/registration.html" class="text-primary hover:bg-surface-container-highest transition-colors px-3 py-1 font-headline font-black uppercase tracking-tighter active:translate-x-1 active:translate-y-1 active:shadow-none">Register</a>
-<a href="/frontend/leaderboards.html" class="text-primary hover:bg-surface-container-highest transition-colors px-3 py-1 font-headline font-black uppercase tracking-tighter active:translate-x-1 active:translate-y-1 active:shadow-none">Leaderboards</a>
-<a href="/frontend/teams.html" class="text-primary hover:bg-surface-container-highest transition-colors px-3 py-1 font-headline font-black uppercase tracking-tighter active:translate-x-1 active:translate-y-1 active:shadow-none">Teams</a>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-3xl" data-original-icon="notifications">notifications</button>
-<button class="material-symbols-outlined text-3xl" data-original-icon="account_circle">account_circle</button>
-<a href="/frontend/signup.html">
-    <button class="bg-secondary text-on-primary font-headline font-black px-6 py-2 border-2 border-primary neo-brutal-shadow-sm active:translate-x-1 active:translate-y-1 active:shadow-none transition-all uppercase">SIGN UP</button>
-</a>
-</div>
-</nav>
-<main class="w-full">
-<!-- Hero Section -->
-<section class="relative min-h-[80vh] flex items-center overflow-hidden border-b-4 border-primary bauhaus-grid">
-<div class="absolute right-0 top-0 w-1/3 h-full bg-primary-fixed border-l-4 border-primary hidden lg:block -skew-x-12 translate-x-20"></div>
-<div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 py-20">
-<div class="flex flex-col justify-center gap-8">
-<h1 class="font-headline font-black text-7xl md:text-9xl leading-[0.85] tracking-tighter uppercase text-primary">
+            <div class="hidden md:flex gap-4">
+                <a href="#tournaments-section"
+                    class="text-primary bg-primary-fixed border-2 border-primary px-3 py-1 font-headline font-black uppercase tracking-tighter active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-75">Tournaments</a>
+                <a href="/frontend/registration.html"
+                    class="text-primary hover:bg-surface-container-highest transition-colors px-3 py-1 font-headline font-black uppercase tracking-tighter active:translate-x-1 active:translate-y-1 active:shadow-none">Register</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="material-symbols-outlined text-3xl" data-original-icon="notifications">notifications</button>
+            <button class="material-symbols-outlined text-3xl"
+                data-original-icon="account_circle">account_circle</button>
+            <a href="/frontend/signup.html">
+                <button
+                    class="bg-secondary text-on-primary font-headline font-black px-6 py-2 border-2 border-primary neo-brutal-shadow-sm active:translate-x-1 active:translate-y-1 active:shadow-none transition-all uppercase">SIGN
+                    UP</button>
+            </a>
+        </div>
+    </nav>
+    <main class="w-full">
+        <!-- Hero Section -->
+        <section class="relative min-h-[80vh] flex items-center overflow-hidden border-b-4 border-primary bauhaus-grid">
+            <div
+                class="absolute right-0 top-0 w-1/3 h-full bg-primary-fixed border-l-4 border-primary hidden lg:block -skew-x-12 translate-x-20">
+            </div>
+            <div class="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 py-20">
+                <div class="flex flex-col justify-center gap-8">
+                    <h1
+                        class="font-headline font-black text-7xl md:text-9xl leading-[0.85] tracking-tighter uppercase text-primary">
                         Form <br> Follows <br> <span class="bg-primary text-background px-4">Victory</span>
-</h1>
-<p class="text-2xl font-body font-bold max-w-xl text-primary border-l-8 border-primary pl-6 py-2">
-                        The world's most disciplined competitive gaming infrastructure. No distractions. Just pure mechanical skill and tactical geometry.
+                    </h1>
+                    <p class="text-2xl font-body font-bold max-w-xl text-primary border-l-8 border-primary pl-6 py-2">
+                        The world's most disciplined competitive gaming infrastructure. No distractions. Just pure
+                        mechanical skill and tactical geometry.
                     </p>
-<div class="relative mt-8">
-    <div class="border-4 border-primary bg-background neo-brutal-shadow overflow-hidden flex flex-col">
-        <div class="relative h-64 overflow-hidden border-b-4 border-primary">
-            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL1nmA9n75ns-FkuPGpj7WIcH8lX16YRUqvZxe8v0jvqc8F8kj4UhgtOr8MPbMgHB8oGxM5bl-wbXj5cx7zqzTvSa7ZBCoVOGRMakwDQ4bPBWAKcD16_p1OKDQDivJtLY_TBDk4yusVhCqtANcz43RMdVeqAR1PsotV9xl61uBV6iQ845kMGrWCm_mvSLMjMs8Bd69JuX2tqaLsxGZljsCYucObA_OnpQqAZTHTVg0SedSvlD-rjgxonMWvltiEC6-dQLc_fkxvN9lzg" alt="Platform Hub Illustration">
-            <div class="absolute top-4 left-4 bg-primary-fixed border-2 border-primary p-2 neo-brutal-shadow-sm">
-                <span class="font-headline font-black text-sm uppercase tracking-tighter">PLATFORM HUB</span>
-            </div>
-        </div>
-        <div class="p-6 bg-surface-container flex flex-col gap-6">
-            <div class="grid grid-cols-2 gap-4">
-                <div class="border-2 border-primary bg-background p-3">
-                    <div class="text-xs font-headline font-black uppercase opacity-60">Live Players</div>
-                    <div class="text-2xl font-headline font-black text-secondary">12,482</div>
+                    <div class="relative mt-8">
+                        <div
+                            class="border-4 border-primary bg-background neo-brutal-shadow overflow-hidden flex flex-col">
+                            <div class="relative h-64 overflow-hidden border-b-4 border-primary">
+                                <img class="w-full h-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL1nmA9n75ns-FkuPGpj7WIcH8lX16YRUqvZxe8v0jvqc8F8kj4UhgtOr8MPbMgHB8oGxM5bl-wbXj5cx7zqzTvSa7ZBCoVOGRMakwDQ4bPBWAKcD16_p1OKDQDivJtLY_TBDk4yusVhCqtANcz43RMdVeqAR1PsotV9xl61uBV6iQ845kMGrWCm_mvSLMjMs8Bd69JuX2tqaLsxGZljsCYucObA_OnpQqAZTHTVg0SedSvlD-rjgxonMWvltiEC6-dQLc_fkxvN9lzg"
+                                    alt="Platform Hub Illustration">
+                                <div
+                                    class="absolute top-4 left-4 bg-primary-fixed border-2 border-primary p-2 neo-brutal-shadow-sm">
+                                    <span class="font-headline font-black text-sm uppercase tracking-tighter">PLATFORM
+                                        HUB</span>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-surface-container flex flex-col gap-6">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="border-2 border-primary bg-background p-3">
+                                        <div class="text-xs font-headline font-black uppercase opacity-60">Live Players
+                                        </div>
+                                        <div id="stat-live-players" class="text-2xl font-headline font-black text-secondary">...</div>
+                                    </div>
+                                    <div class="border-2 border-primary bg-background p-3">
+                                        <div class="text-xs font-headline font-black uppercase opacity-60">Active
+                                            tournaments</div>
+                                        <div id="stat-active-tournaments-1" class="text-2xl font-headline font-black text-primary">...</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -left-4 w-12 h-12 bg-tertiary border-4 border-primary -z-10 rounded-full">
+                        </div>
+                    </div>
                 </div>
-                <div class="border-2 border-primary bg-background p-3">
-                    <div class="text-xs font-headline font-black uppercase opacity-60">Active tournaments</div>
-                    <div class="text-2xl font-headline font-black text-primary">84</div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-tertiary border-4 border-primary -z-10 rounded-full"></div>
-</div>
-</div>
-<div class="relative hidden lg:flex items-center justify-center">
-<div class="w-full h-[500px] border-4 border-primary bg-background neo-brutal-shadow relative overflow-hidden group">
-<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A dynamic, high-contrast action shot of a professional gamer at a minimalist desk, illuminated by strong red and blue lights. The background is a clean white studio with geometric Bauhaus-inspired graphics. The atmosphere is intense, focused, and professional, reflecting a high-stakes gaming tournament environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxYHfHhwVUdkVW9-Q4YweRAKoHsQvMdugDAu_iPSSVcs-BY1TDHOkQFfi9GrLLpW8LkPuv5tcPfWSey9tnsjai6rInuLTe9z--rySz8x_TRPjRaZpaFHjhNfLF1qfJgWF3RGqXAPxOHXFhVyoSwQXc6DllPvGCf3q_r10cu_bD_tKA7klDrzo5q2lWl8CGoCNNg1cau2NQo1g7YiMia6QAJbbVwcaHn_HbF-cohxzgkAoSULvniqCE">
-<div class="absolute bottom-0 left-0 bg-primary text-background p-4 font-headline font-black text-2xl uppercase tracking-tighter">
+                <div class="relative hidden lg:flex items-center justify-center">
+                    <div
+                        class="w-full h-[500px] border-4 border-primary bg-background neo-brutal-shadow relative overflow-hidden group">
+                        <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                            data-alt="A dynamic, high-contrast action shot of a professional gamer at a minimalist desk, illuminated by strong red and blue lights. The background is a clean white studio with geometric Bauhaus-inspired graphics. The atmosphere is intense, focused, and professional, reflecting a high-stakes gaming tournament environment."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxYHfHhwVUdkVW9-Q4YweRAKoHsQvMdugDAu_iPSSVcs-BY1TDHOkQFfi9GrLLpW8LkPuv5tcPfWSey9tnsjai6rInuLTe9z--rySz8x_TRPjRaZpaFHjhNfLF1qfJgWF3RGqXAPxOHXFhVyoSwQXc6DllPvGCf3q_r10cu_bD_tKA7klDrzo5q2lWl8CGoCNNg1cau2NQo1g7YiMia6QAJbbVwcaHn_HbF-cohxzgkAoSULvniqCE">
+                        <div
+                            class="absolute bottom-0 left-0 bg-primary text-background p-4 font-headline font-black text-2xl uppercase tracking-tighter">
                             Featured Match: Team Red vs Team Blue
                         </div>
-</div>
-<!-- Abstract Geometric Accents -->
-<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary border-4 border-primary -z-10"></div>
-<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-tertiary border-4 border-primary -z-10 rounded-full"></div>
-</div>
-</div>
-</section><section class="py-12 bg-surface-container border-b-4 border-primary">
-    <div class="container mx-auto px-6">
-        <h2 class="font-headline font-black text-5xl uppercase tracking-tighter mb-8">ACTIVE SECTORS</h2>
-        <div class="flex flex-col md:flex-row gap-6 items-stretch">
-            <div class="relative flex-grow">
-                <select class="w-full bg-primary-fixed border-4 border-primary p-6 font-headline font-black text-2xl uppercase appearance-none focus:ring-0 focus:border-secondary cursor-pointer">
-                    <option>SELECT TOURNAMENT</option>
-                    <option>NEO-GEOMETRY OPEN</option>
-                    <option>BAUHAUS BRAWL V2</option>
-                    <option>GRID MASTERS 2024</option>
-                    <option>PRIMARY COLOR CLASH</option>
-                </select>
-                <div class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none">
-                    <span class="material-symbols-outlined text-4xl">expand_more</span>
+                    </div>
+                    <!-- Abstract Geometric Accents -->
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary border-4 border-primary -z-10"></div>
+                    <div
+                        class="absolute -bottom-10 -left-10 w-40 h-40 bg-tertiary border-4 border-primary -z-10 rounded-full">
+                    </div>
                 </div>
             </div>
-            <button class="bg-secondary text-on-primary text-2xl font-headline font-black px-12 py-6 border-4 border-primary neo-brutal-shadow active:translate-x-1 active:translate-y-1 active:shadow-none transition-all uppercase whitespace-nowrap">
-                REGISTER FOR SELECTION
-            </button>
-        </div>
-    </div>
-</section>
-<!-- Stats Bar -->
-<section class="bg-primary text-background py-12 px-6">
-<div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-<div class="flex flex-col gap-2">
-<span class="font-headline font-black text-7xl text-primary-fixed uppercase tracking-tight">100+</span>
-<span class="font-headline font-bold text-xl uppercase tracking-widest text-surface-container">Players Joined</span>
-</div>
-<div class="flex flex-col gap-2 border-y-4 md:border-y-0 md:border-x-4 border-surface-container py-8 md:py-0">
-<span class="font-headline font-black text-7xl text-secondary uppercase tracking-tight">12</span>
-<span class="font-headline font-bold text-xl uppercase tracking-widest text-surface-container">Active Tournaments</span>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-headline font-black text-7xl text-tertiary-fixed uppercase tracking-tight">$2.4M</span>
-<span class="font-headline font-bold text-xl uppercase tracking-widest text-surface-container">Total Prize Pool</span>
-</div>
-</div>
-</section>
-<!-- Active Tournaments (Bento Grid) -->
+        </section>
+        <section id="tournaments-section" class="py-12 bg-surface-container border-b-4 border-primary">
+            <div class="container mx-auto px-6">
+                <h2 class="font-headline font-black text-5xl uppercase tracking-tighter mb-8">ACTIVE SECTORS</h2>
+                <div class="flex flex-col md:flex-row gap-6 items-stretch">
+                    <div class="relative flex-grow">
+                        <select id="tournament-select"
+                            class="w-full bg-primary-fixed border-4 border-primary p-6 font-headline font-black text-2xl uppercase appearance-none focus:ring-0 focus:border-secondary cursor-pointer">
+                            <option value="">SELECT TOURNAMENT</option>
+                        </select>
+                        <div class="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none">
+                            <span class="material-symbols-outlined text-4xl">expand_more</span>
+                        </div>
+                    </div>
+                    <button id="register-btn"
+                        class="bg-secondary text-on-primary text-2xl font-headline font-black px-12 py-6 border-4 border-primary neo-brutal-shadow active:translate-x-1 active:translate-y-1 active:shadow-none transition-all uppercase whitespace-nowrap">
+                        REGISTER FOR SELECTION
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Bar -->
+        <section class="bg-primary text-background py-12 px-6">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="flex flex-col gap-2">
+                    <span id="stat-players-joined"
+                        class="font-headline font-black text-7xl text-primary-fixed uppercase tracking-tight">...</span>
+                    <span
+                        class="font-headline font-bold text-xl uppercase tracking-widest text-surface-container">Players
+                        Joined</span>
+                </div>
+                <div
+                    class="flex flex-col gap-2 border-y-4 md:border-y-0 md:border-x-4 border-surface-container py-8 md:py-0">
+                    <span id="stat-active-tournaments-2" class="font-headline font-black text-7xl text-secondary uppercase tracking-tight">...</span>
+                    <span
+                        class="font-headline font-bold text-xl uppercase tracking-widest text-surface-container">Active
+                        Tournaments</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span
+                        class="font-headline font-black text-7xl text-tertiary-fixed uppercase tracking-tight">$2.4M</span>
+                    <span class="font-headline font-bold text-xl uppercase tracking-widest text-surface-container">Total
+                        Prize Pool</span>
+                </div>
+            </div>
+        </section>
+        <!-- Active Tournaments (Bento Grid) -->
 
-<!-- Newsletter / CTA -->
-<section class="py-24 bg-background border-t-4 border-primary relative overflow-hidden">
-<div class="absolute -left-20 bottom-0 text-[20rem] font-headline font-black text-primary opacity-5 leading-none select-none">BAU</div>
-<div class="container mx-auto px-6 relative z-10">
-<div class="max-w-4xl mx-auto border-4 border-primary bg-primary-fixed p-12 neo-brutal-shadow relative">
-<div class="absolute -top-6 -right-6 w-12 h-12 bg-secondary border-4 border-primary"></div>
-<div class="grid md:grid-cols-2 gap-12 items-center">
-<div>
-<h2 class="font-headline font-black text-5xl uppercase tracking-tighter mb-4">STAY IN FORM</h2>
-<p class="font-body font-bold text-lg mb-8 uppercase italic">Get tournament alerts, meta updates, and priority registration codes.</p>
-<div class="flex flex-col gap-4">
-<input class="bg-background border-b-4 border-primary border-t-0 border-x-0 focus:ring-0 focus:border-secondary font-headline font-black text-2xl uppercase p-4 placeholder:opacity-30" placeholder="YOUR@EMAIL.COM" type="email">
-<button class="bg-primary text-background py-4 font-headline font-black text-xl uppercase border-2 border-primary hover:bg-secondary transition-colors">Subscribe Now</button>
-</div>
-</div>
-<div class="hidden md:block">
-<img class="w-full mix-blend-multiply" data-alt="A stylized geometric illustration of a mechanical keyboard and a mouse, rendered in a strict Bauhaus style with bold primary colors (red, yellow, blue) and thick black outlines. The composition is balanced and raw, representing the 'tools of the trade' for competitive gamers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtI23N-6gUGJz4KZbW0mao0AGMgUEr-HDBf1x8MWOUbIf3rmfHW5gXreBwnv47Ei4EEnG3bxrGP-1ygEwaJSlISwBrjyCbt2ZtQU9Hj0L-7aRir44pFYbYK387Oej2jskEWAmwcrMoYXNQ_ndR1YkN9J304IORylLWNghKpakCukpI_YZKDH3IgYhp7MKLgntV4KTG2vq-1thR2QIszRuDS3hC7C_7U7TaRfrlk0x9yyASbLGn3q0R">
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-primary text-background pt-20 pb-10 px-6 border-t-8 border-secondary">
-<div class="container mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-<div class="col-span-1 md:col-span-2">
-<div class="text-6xl font-headline font-black tracking-tighter uppercase mb-6">ARENA.BAU</div>
-<p class="text-xl max-w-sm font-bold opacity-60">Architects of the modern competitive landscape. Designed for performance, engineered for glory.</p>
-</div>
-<div>
-<h4 class="font-headline font-black text-2xl uppercase mb-6 text-primary-fixed">Platform</h4>
-<ul class="flex flex-col gap-3 font-bold uppercase tracking-widest text-sm">
-<li class=""><a class="hover:text-secondary transition-colors" href="#">Tournaments</a></li>
-<li class=""><a class="hover:text-secondary transition-colors" href="#">Leaderboards</a></li>
-<li class=""><a class="hover:text-secondary transition-colors" href="#">Prize Payouts</a></li>
-<li class=""><a class="hover:text-secondary transition-colors" href="#">API Docs</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-black text-2xl uppercase mb-6 text-primary-fixed">Legal</h4>
-<ul class="flex flex-col gap-3 font-bold uppercase tracking-widest text-sm">
-<li class=""><a class="hover:text-secondary transition-colors" href="#">Terms of Service</a></li>
-<li class=""><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
-<li class=""><a class="hover:text-secondary transition-colors" href="#">Cookie Policy</a></li>
-<li class=""><a class="hover:text-secondary transition-colors" href="#">Rules of Conduct</a></li>
-</ul>
-</div>
-</div>
-<div class="flex flex-col md:flex-row justify-between items-center pt-10 border-t-2 border-surface-container-low gap-6">
-<p class="font-bold opacity-40 uppercase text-xs tracking-[0.2em]">© 2024 ARENA.BAU. FORM FOLLOWS FUNCTION.</p>
-<div class="flex gap-8">
-<a class="hover:text-secondary transition-colors font-headline font-black uppercase text-sm italic" href="#">TWITTER</a>
-<a class="hover:text-secondary transition-colors font-headline font-black uppercase text-sm italic" href="#">DISCORD</a>
-<a class="hover:text-secondary transition-colors font-headline font-black uppercase text-sm italic" href="#">TWITCH</a>
-</div>
-</div>
-</div>
-</footer>
-<script src="js/api.js"></script>
+        <!-- Newsletter / CTA -->
+        <section class="py-24 bg-background border-t-4 border-primary relative overflow-hidden">
+            <div
+                class="absolute -left-20 bottom-0 text-[20rem] font-headline font-black text-primary opacity-5 leading-none select-none">
+                BAU</div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl mx-auto border-4 border-primary bg-primary-fixed p-12 neo-brutal-shadow relative">
+                    <div class="absolute -top-6 -right-6 w-12 h-12 bg-secondary border-4 border-primary"></div>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 class="font-headline font-black text-5xl uppercase tracking-tighter mb-4">STAY IN FORM
+                            </h2>
+                            <p class="font-body font-bold text-lg mb-8 uppercase italic">Get tournament alerts, meta
+                                updates, and priority registration codes.</p>
+                            <div class="flex flex-col gap-4">
+                                <input
+                                    class="bg-background border-b-4 border-primary border-t-0 border-x-0 focus:ring-0 focus:border-secondary font-headline font-black text-2xl uppercase p-4 placeholder:opacity-30"
+                                    placeholder="YOUR@EMAIL.COM" type="email">
+                                <button
+                                    class="bg-primary text-background py-4 font-headline font-black text-xl uppercase border-2 border-primary hover:bg-secondary transition-colors">Subscribe
+                                    Now</button>
+                            </div>
+                        </div>
+                        <div class="hidden md:block">
+                            <img class="w-full mix-blend-multiply"
+                                data-alt="A stylized geometric illustration of a mechanical keyboard and a mouse, rendered in a strict Bauhaus style with bold primary colors (red, yellow, blue) and thick black outlines. The composition is balanced and raw, representing the 'tools of the trade' for competitive gamers."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtI23N-6gUGJz4KZbW0mao0AGMgUEr-HDBf1x8MWOUbIf3rmfHW5gXreBwnv47Ei4EEnG3bxrGP-1ygEwaJSlISwBrjyCbt2ZtQU9Hj0L-7aRir44pFYbYK387Oej2jskEWAmwcrMoYXNQ_ndR1YkN9J304IORylLWNghKpakCukpI_YZKDH3IgYhp7MKLgntV4KTG2vq-1thR2QIszRuDS3hC7C_7U7TaRfrlk0x9yyASbLGn3q0R">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-primary text-background pt-20 pb-10 px-6 border-t-8 border-secondary">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-6xl font-headline font-black tracking-tighter uppercase mb-6">ARENA.BAU</div>
+                    <p class="text-xl max-w-sm font-bold opacity-60">Architects of the modern competitive landscape.
+                        Designed for performance, engineered for glory.</p>
+                </div>
+                <div>
+                    <h4 class="font-headline font-black text-2xl uppercase mb-6 text-primary-fixed">Platform</h4>
+                    <ul class="flex flex-col gap-3 font-bold uppercase tracking-widest text-sm">
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">Tournaments</a></li>
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">Leaderboards</a></li>
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">Prize Payouts</a></li>
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">API Docs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-headline font-black text-2xl uppercase mb-6 text-primary-fixed">Legal</h4>
+                    <ul class="flex flex-col gap-3 font-bold uppercase tracking-widest text-sm">
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">Terms of Service</a>
+                        </li>
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">Privacy Policy</a></li>
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">Cookie Policy</a></li>
+                        <li class=""><a class="hover:text-secondary transition-colors" href="#">Rules of Conduct</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row justify-between items-center pt-10 border-t-2 border-surface-container-low gap-6">
+                <p class="font-bold opacity-40 uppercase text-xs tracking-[0.2em]">© 2024 ARENA.BAU. FORM FOLLOWS
+                    FUNCTION.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-secondary transition-colors font-headline font-black uppercase text-sm italic"
+                        href="#">TWITTER</a>
+                    <a class="hover:text-secondary transition-colors font-headline font-black uppercase text-sm italic"
+                        href="#">DISCORD</a>
+                    <a class="hover:text-secondary transition-colors font-headline font-black uppercase text-sm italic"
+                        href="#">TWITCH</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/api.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        const selectBox = document.getElementById('tournament-select');
+        const registerBtn = document.getElementById('register-btn');
+
+        try {
+            const [tournamentsResponse, playersResponse] = await Promise.all([
+                fetch('http://localhost:5000/api/tournaments'),
+                fetch('http://localhost:5000/api/players')
+            ]);
+            
+            const result = await tournamentsResponse.json();
+            const playersResult = await playersResponse.json();
+
+            // Populate active tournaments stat
+            if (result.success && result.data) {
+                const tournamentCount = result.data.length;
+                document.getElementById('stat-active-tournaments-1').textContent = tournamentCount;
+                document.getElementById('stat-active-tournaments-2').textContent = tournamentCount;
+                
+                // Populate options
+                result.data.forEach(t => {
+                    const option = document.createElement('option');
+                    option.value = t._id;
+                    option.textContent = t.name.toUpperCase();
+                    selectBox.appendChild(option);
+                });
+            }
+
+            // Populate players stats
+            if (playersResult.success && playersResult.data) {
+                const playersCount = playersResult.data.length;
+                
+                // Live Players (raw count)
+                document.getElementById('stat-live-players').textContent = playersCount.toLocaleString();
+
+                // Players Joined (rounded to nearest 100)
+                let joinedText = playersCount.toString();
+                if (playersCount >= 100) {
+                    joinedText = `${Math.floor(playersCount / 100) * 100}+`;
+                }
+                document.getElementById('stat-players-joined').textContent = joinedText;
+            }
+
+        } catch(error) {
+            console.error("Error fetching tournaments:", error);
+        }
+
+        registerBtn.addEventListener('click', () => {
+            const selectedId = selectBox.value;
+            if (selectedId) {
+                // Redirect to our new view route
+                window.location.href = `http://localhost:5000/view/tournament/${selectedId}`;
+            } else {
+                alert("Please select a tournament first!");
+            }
+        });
+    });
+</script>
 </body>
+
 </html>

@@ -15,10 +15,8 @@
 <div class="flex items-center gap-8">
 <a href="#" class="text-4xl font-headline font-black tracking-tighter text-primary border-r-4 border-primary px-4">ARENA.BAU</a>
 <div class="hidden md:flex gap-4">
-<a href="#" class="font-headline font-black uppercase text-primary hover:bg-surface-container-highest transition-colors px-3 py-1">Tournaments</a>
+<a href="/frontend/index.html#tournaments-section" class="font-headline font-black uppercase text-primary hover:bg-surface-container-highest transition-colors px-3 py-1">Tournaments</a>
 <a href="#" class="font-headline font-black uppercase text-primary bg-primary-fixed border-2 border-primary px-3 py-1">Register</a>
-<a href="#" class="font-headline font-black uppercase text-primary hover:bg-surface-container-highest transition-colors px-3 py-1">Leaderboards</a>
-<a href="#" class="font-headline font-black uppercase text-primary hover:bg-surface-container-highest transition-colors px-3 py-1">Teams</a>
 </div>
 </div>
 <div class="flex items-center gap-4">
@@ -73,27 +71,19 @@
 <input type="email" id="email" name="email" required="" placeholder="PLAYER@DOMAIN.COM" class="w-full border-b-4 border-primary bg-transparent py-4 text-2xl font-headline font-black uppercase focus:outline-none focus:border-tertiary transition-colors placeholder:opacity-30">
 </div>
 <div class="space-y-2">
-<label for="country" class="font-headline font-black text-xl uppercase tracking-tight flex items-center gap-2">
+<label for="tourna" class="font-headline font-black text-xl uppercase tracking-tight flex items-center gap-2">
 <span class="w-4 h-4 bg-primary-fixed"></span>
-                            Origin Territory (Country)
+                            AVAILABLE TOURNAMENTS
                         </label>
 <div class="relative">
-<select id="country" name="country" required="" class="w-full border-b-4 border-primary bg-transparent py-4 text-2xl font-headline font-black uppercase focus:outline-none focus:border-primary appearance-none cursor-pointer">
-<option value="" disabled="" selected="">SELECT_REGION</option>
-<option value="US">United States</option>
-<option value="DE">Germany</option>
-<option value="JP">Japan</option>
-<option value="UK">United Kingdom</option>
-<option value="BR">Brazil</option>
+<select id="tourna" name="tourna" required="" class="w-full border-b-4 border-primary bg-transparent py-4 text-2xl font-headline font-black uppercase focus:outline-none focus:border-primary appearance-none cursor-pointer">
+<option value="" disabled="" selected="">LOADING_TOURNAMENTS</option>
 </select>
 <span class="material-symbols-outlined absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-4xl">expand_more</span>
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-6 pt-8">
-<button type="submit" class="flex-1 bg-secondary text-white font-headline font-black text-2xl py-6 border-4 border-primary neo-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none active:translate-x-2 active:translate-y-2 transition-all uppercase tracking-tighter">
-                            Create Player
-                        </button>
-<button type="button" class="flex-1 bg-primary-fixed text-primary font-headline font-black text-2xl py-6 border-4 border-primary neo-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tighter">
+<button type="submit" class="flex-1 bg-primary-fixed text-primary font-headline font-black text-2xl py-6 border-4 border-primary neo-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tighter">
                             Join Tournament
                         </button>
 </div>
@@ -167,6 +157,7 @@
             </div>
 </div>
 </footer>
+<script src="js/api.js"></script>
 <script src="js/registration.js"></script>
 </body>
 </html>

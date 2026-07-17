@@ -1,7 +1,7 @@
 /**
  * Shared API configuration and utilities for ARENA.BAU
  */
-const API_BASE_URL = "/api";
+const API_BASE_URL = "http://localhost:5000/api";
 
 /**
  * Generic fetch wrapper for API requests
